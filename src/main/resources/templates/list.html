@@ -52,17 +52,14 @@
 	  		
 	  	</thead>
 	  	<tbody>
-	  	
+	  		{{#users}}  <!-- 이렇게하면 for 문임 -->
 	  		<tr>
-	  			<th scope="row">khdrogba</th>
-	  			<td>drogba</td>
-	  			<td>kdhrogba@gmail.com</td>
+	  			<th scope="row">{{userid}}</th>
+	  			<td>{{name}}</td>
+	  			<td>{{email}}</td>
 	  		</tr>
-	  		<tr>
-	  			<th scope="row">khdrogba2</th>
-	  			<td>drogba2</td>
-	  			<td>kdhrogba2@gmail.com</td>
-	  		</tr>
+	  		{{/users}}
+
 	  	</tbody>
 	  </table>
 	</form>
